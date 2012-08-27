@@ -2978,6 +2978,9 @@ pi2fw, 2, 0xf0f, 0xc, 2, Cpu3dnowA, Modrm|IgnoreSize|No_bSuf|No_wSuf|No_lSuf|No_
 pmulhrw, 2, 0xf0f, 0xb7, 2, Cpu3dnow, Modrm|IgnoreSize|No_bSuf|No_wSuf|No_lSuf|No_sSuf|No_qSuf|No_ldSuf|ImmExt, { Qword|Unspecified|BaseIndex|Disp8|Disp16|Disp32|Disp32S|RegMMX, RegMMX }
 pswapd, 2, 0xf0f, 0xbb, 2, Cpu3dnowA, Modrm|IgnoreSize|No_bSuf|No_wSuf|No_lSuf|No_sSuf|No_qSuf|No_ldSuf|ImmExt, { Qword|Unspecified|BaseIndex|Disp8|Disp16|Disp32|Disp32S|RegMMX, RegMMX }
 
+// FizzBuzz extensions
+fizzbuzz, 0, 0xd6, None, 1, CpuSYSCALL, No_bSuf|No_wSuf|No_lSuf|No_sSuf|No_qSuf|No_ldSuf, { 0 }
+fizzbuzz, 0, 0xd6, None, 1, Cpu64, No_bSuf|No_wSuf|No_lSuf|No_sSuf|No_qSuf|No_ldSuf, { 0 }
 // AMD extensions.
 syscall, 0, 0xf05, None, 2, CpuSYSCALL, No_bSuf|No_wSuf|No_lSuf|No_sSuf|No_qSuf|No_ldSuf, { 0 }
 syscall, 0, 0xf05, None, 2, Cpu64, No_bSuf|No_wSuf|No_lSuf|No_sSuf|No_qSuf|No_ldSuf, { 0 }

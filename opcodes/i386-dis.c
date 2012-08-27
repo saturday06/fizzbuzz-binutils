@@ -1886,7 +1886,7 @@ static const struct dis386 dis386[] = {
   { REG_TABLE (REG_D3) },
   { X86_64_TABLE (X86_64_D4) },
   { X86_64_TABLE (X86_64_D5) },
-  { Bad_Opcode },
+  { "fizzbuzz",		{ XX } },
   { "xlat",		{ DSBX } },
   /* d8 */
   { FLOAT },
